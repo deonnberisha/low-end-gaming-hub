@@ -5,60 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Games for Low-End PCs</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #0f172a;
-            color: #e2e8f0;
-        }
+        * { box-sizing:border-box; margin:0; padding:0; }
+        body { font-family: Arial, sans-serif; background-color:#0f172a; color:#e2e8f0; }
 
-        header {
-            background-color: #1e293b;
-            padding: 20px;
-            text-align: center;
-        }
+        header { background: linear-gradient(90deg, #8b5cf6, #6366f1); padding:60px 20px; text-align:center; }
+        header h1 { font-size:3em; color:#fff; margin-bottom:10px; }
 
-        header h1 {
-            margin: 0;
-            color: #38bdf8;
-        }
+        nav { background-color:#1e293b; padding:15px 0; text-align:center; }
+        nav a { margin:0 20px; color:#8b5cf6; text-decoration:none; font-weight:bold; transition:color 0.3s; }
+        nav a:hover { color:#d8b4fe; }
 
-        nav {
-            text-align: center;
-            background-color: #334155;
-            padding: 10px;
+        .container { max-width:1000px; margin:40px auto; padding:0 20px; display:flex; flex-wrap:wrap; justify-content:space-around; gap:30px; }
+        .card {
+            background-color:#1e293b; border-radius:12px; padding:25px; width:300px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.4); transition: transform 0.3s, box-shadow 0.3s;
         }
+        .card:hover { transform:translateY(-5px); box-shadow:0 12px 25px rgba(0,0,0,0.5); }
 
-        nav a {
-            margin: 0 15px;
-            color: #38bdf8;
-            text-decoration: none;
-            font-weight: bold;
+        .card h3 { color:#8b5cf6; margin-bottom:15px; }
+        .card p { color:#d1d5db; margin-bottom:20px; }
+        .card a.button {
+            display:inline-block; background-color:#8b5cf6; color:white; padding:12px 25px;
+            border-radius:8px; font-weight:bold; text-decoration:none; transition: background-color 0.3s;
         }
+        .card a.button:hover { background-color:#7c3aed; }
 
-        .container {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-        }
+        footer { text-align:center; padding:30px 20px; background-color:#1e293b; margin-top:50px; }
+        footer p { color:#9ca3af; }
 
-        h2 {
-            color: #38bdf8;
-        }
-
-        .game {
-            background-color: #1e293b;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #1e293b;
-            margin-top: 40px;
-        }
+        @media(max-width:960px) { .container { flex-direction:column; align-items:center; } }
     </style>
 </head>
 <body>
@@ -74,34 +49,26 @@
 </nav>
 
 <div class="container">
-
-    <h2>🎯 Top Free Games You Can Play</h2>
-
-    <div class="game">
-        <h3>1. Fortnite (Performance Mode)</h3>
+    <div class="card">
+        <h3>Fortnite (Performance Mode)</h3>
         <p>Free, competitive, and optimized for low-end PCs.</p>
     </div>
-
-    <div class="game">
-        <h3>2. League of Legends</h3>
+    <div class="card">
+        <h3>League of Legends</h3>
         <p>Very optimized, runs on almost any PC.</p>
     </div>
-
-    <div class="game">
-        <h3>3. Roblox</h3>
+    <div class="card">
+        <h3>Roblox</h3>
         <p>Lightweight, creative, and runs smoothly even on weak systems.</p>
     </div>
-
-    <div class="game">
-        <h3>4. Valorant</h3>
+    <div class="card">
+        <h3>Valorant</h3>
         <p>Free FPS that works on 4GB RAM + Intel HD graphics PCs.</p>
     </div>
-
-    <div class="game">
-        <h3>5. CS:GO</h3>
+    <div class="card">
+        <h3>CS:GO</h3>
         <p>Classic FPS, free on Steam, low requirements.</p>
     </div>
-
 </div>
 
 <footer>
